@@ -7,5 +7,6 @@ namespace ZwajApp.API.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<TblValue> TblValues { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

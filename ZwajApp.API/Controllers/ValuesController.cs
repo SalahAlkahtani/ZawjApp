@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ZwajApp.API.Data;
@@ -18,6 +19,7 @@ namespace ZwajApp.API.Controllers
             _context = context;
 
         }
+        [Authorize]
         // GET api/values
         [HttpGet]
         public async Task <IActionResult> GetValues()
@@ -25,7 +27,7 @@ namespace ZwajApp.API.Controllers
             var values= await _context.TblValues.ToListAsync();
             return Ok(values);
         }
-
+[AllowAnonymous]
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task< IActionResult> GetValue(int id)
