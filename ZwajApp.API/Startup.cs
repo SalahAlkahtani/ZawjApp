@@ -14,7 +14,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ZwajApp.API.Data;
-
 namespace ZwajApp.API
 {
     public class Startup

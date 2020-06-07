@@ -20,6 +20,7 @@ namespace ZwajApp.API.Controllers
 
         }
         [Authorize]
+        [AllowAnonymous]
         // GET api/values
         [HttpGet]
         public async Task <IActionResult> GetValues()
@@ -27,8 +28,8 @@ namespace ZwajApp.API.Controllers
             var values= await _context.TblValues.ToListAsync();
             return Ok(values);
         }
-[AllowAnonymous]
         // GET api/values/5
+[AllowAnonymous]
         [HttpGet("{id}")]
         public async Task< IActionResult> GetValue(int id)
         {
