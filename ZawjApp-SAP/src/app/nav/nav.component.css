@@ -4,12 +4,25 @@
     color: pink !important;
 }
 
-.nav-link {
+.mnav-link:hover,
+.mnav-link:focus {
+    text-decoration: none;
+    color: pink !important;
+}
+
+.mnav-link {
     color: white !important;
 }
 
-.btn-secondary:hover {
-    text-decoration: none;
+.mnav-link {
     color: black !important;
-    background: pink !important
+    letter-spacing: .5px;
+    font-weight: bold;
+    font-family: 'JF-Flat';
+    font-size: 1.0rem;
+}
+
+.dropdown-toggle,
+.dropdown-item {
+    cursor: pointer;
 }
