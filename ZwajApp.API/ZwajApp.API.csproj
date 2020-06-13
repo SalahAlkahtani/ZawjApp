@@ -15,5 +15,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="2.1.4"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="2.1.4"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1"/>
   </ItemGroup>
 </Project>

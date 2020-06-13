@@ -4,5 +4,6 @@ namespace ZwajApp.API.Module
     {
         public int id { get; set; }
         public string Name { get; set; }
+     
     }
 }
