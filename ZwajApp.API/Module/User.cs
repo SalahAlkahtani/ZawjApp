@@ -1,6 +1,8 @@
-using System;
-using System.Collections.Generic;
 
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 namespace ZwajApp.API.Module
 {
     public class User
@@ -19,7 +21,7 @@ namespace ZwajApp.API.Module
         public string Interests { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public ICollection<Photo> Photos { get; set; }
+         public ICollection<Photo> Photos { get; set; }
 
     }
 }

@@ -6,7 +6,7 @@ namespace ZwajApp.API.Dtos
 {
     public class UserForDetailsDto
     {
-          public int Id { get; set; }
+       public int Id { get; set; }
         public string UserName { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
@@ -19,6 +19,6 @@ namespace ZwajApp.API.Dtos
         public string City { get; set; }
         public string Country { get; set; }
       public string PhotoURL { get; set; }
-      public ICollection<PhotoForDetailsDto> MyProperty { get; set; }
+      public ICollection<Photo> Photos { get; set; }
     }
 }
